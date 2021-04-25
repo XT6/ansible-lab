@@ -50,16 +50,19 @@ external_host=true
 ansible_user=root
 ansible_become=no
 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+ansible_python_interpreter=/usr/bin/python3
 
 [proxmox_cts_turnkey:vars]
 ansible_user=root
 ansible_become=no
 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+ansible_python_interpreter=/usr/bin/python3
 
 [proxmox_vms:vars]
 ansible_user=carlos
 ansible_become=yes
 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+ansible_python_interpreter=/usr/bin/python3
 
 [vars]
 ansible_python_interpreter=/usr/bin/python3
